@@ -1,0 +1,37 @@
+Responsives
+----------------
+
+- Contenido adaptable
+- Cross-platform ( browser )
+- Portable - Lanscape
+
+JavaScrip - Angular
+CSS - Sas
+
+Paginas
+http://caniuse.com/
+http://mobilehtml5.org/
+
+Los tre pilares del Responsive Web Design
+    1. Tipografía
+    2. Imagenes
+    2. Columnas
+
+http://viewportsizes.com/
+
+Patrones de Diseño
+
+    Mostly Fluid
+    https://mediaqueri.es/    
+
+    Column Drop
+    http://weenudge.com/
+
+    Layou Shifter
+    http://anderssonwise.com/
+
+    Tiny tweaks
+    http://gingerwhale.com/
+
+    Off Canvas
+    
