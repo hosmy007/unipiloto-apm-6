@@ -1,3 +1,14 @@
 https://html5test.com/
 https://github.com/hosmy007/unipiloto-apm-6
 https://floobits.com
+http://getskeleton.com/
+
+http://schema.org
+
+http://www.typescriptlang.org/
+
+https://nodejs.org/en/
+
+https://www.npmjs.com/
+
+http://semver.org/

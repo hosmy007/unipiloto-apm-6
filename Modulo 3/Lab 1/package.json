@@ -1,0 +1,11 @@
+{
+  "name": "lab1",
+  "version": "1.0.0",
+  "description": "Este es un paquete de la clase de Moviles en la U Piloto, Laboratio 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ing. Rafael G Blanco Banquez <rafael.blanco@excelentasas.com>",
+  "license": "ISC"
+}
