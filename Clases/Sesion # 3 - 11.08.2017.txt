@@ -1,1 +1,42 @@
 
+
+- En css el simbolo > aplica para el primer elemento que encuentre como nodo
+    .list-inline > li {
+        display: inline-block;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+
+NodeJS
+    NPM
+        npm init ( Crear un paquete )
+
+        npm install -g cordova  ( instalar un paquete )
+        npm install -g ionic
+        npm install -g typescript@2.0.9
+
+
+        ERROR:
+        --------------------------------------------------------------------------
+        npm ERR! Windows_NT 10.0.14393
+        npm ERR! argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "cordova" "ionic" "typescript@2.0.9"
+        npm ERR! node v6.11.2
+        npm ERR! npm  v3.10.10
+        npm ERR! code SELF_SIGNED_CERT_IN_CHAIN
+
+        npm ERR! self signed certificate in certificate chain
+        npm ERR!
+        npm ERR! If you need help, you may report this error at:
+        npm ERR!     <https://github.com/npm/npm/issues>
+
+        npm ERR! Please include the following file with any support request:
+        npm ERR!     C:\Users\rafar\npm-debug.log
+
+         SOLUCION
+            npm config set strict-ssl false
+
+
+        ---------------------------------------------------------------------------
+
+    
