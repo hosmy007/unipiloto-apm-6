@@ -11,4 +11,6 @@ https://nodejs.org/en/
 
 https://www.npmjs.com/
 
-http://semver.org/
+http://semver.org/@
+
+https://github.com/angular/angular-cli/wiki

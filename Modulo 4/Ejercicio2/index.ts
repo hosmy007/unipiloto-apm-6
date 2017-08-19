@@ -64,9 +64,10 @@ class Student extends Person{
 
 class Teacher extends Person{
 
-    profession:string;
-    grades:number[];
-    glaups:string[];
+    private profession:string;
+    private grades:number[];
+    private glaups:string[];
+    private students:Student[];
 
     /**
      * 
@@ -83,7 +84,10 @@ class Teacher extends Person{
         this.profession = profession;
         this.grades = grades;
         this.glaups = glaups;        
-    }             
+    }       
+    setStudents(st:Student[]): void{
+		this.students = st;
+	}      
 }
 
 let classes: string[] = ["Calculo", "Programacion", "Teoría"];
@@ -97,8 +101,9 @@ let student3 = new Student(3,26,"Rafael 3 Guillermo","Blanco 3 Banquez", classes
 let studets: Student[] = [student1, student2, student3 ];
 
 var teacher = new Teacher(2,45,"Angel","Banquez", "Doctor en ciencias", grades, glaups);
+teacher.setStudents( studets );
 
-studets.forEach(aStudent => {
+/*studets.forEach(aStudent => {
     console.log(aStudent); 
-});
+});*/
 console.log(teacher);

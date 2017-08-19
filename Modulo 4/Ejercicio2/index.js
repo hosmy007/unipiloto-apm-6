@@ -75,6 +75,9 @@ var Teacher = (function (_super) {
         this.grades = grades;
         this.glaups = glaups;
     }
+    Teacher.prototype.setStudents = function (st) {
+        this.students = st;
+    };
     return Teacher;
 }(Person));
 var classes = ["Calculo", "Programacion", "Teoría"];
@@ -85,7 +88,8 @@ var student2 = new Student(2, 25, "Rafael 2 Guillermo", "Blanco 2 Banquez", clas
 var student3 = new Student(3, 26, "Rafael 3 Guillermo", "Blanco 3 Banquez", classes, 10, "otra cosa112");
 var studets = [student1, student2, student3];
 var teacher = new Teacher(2, 45, "Angel", "Banquez", "Doctor en ciencias", grades, glaups);
-studets.forEach(function (aStudent) {
+teacher.setStudents(studets);
+/*studets.forEach(aStudent => {
     console.log(aStudent);
-});
+});*/
 console.log(teacher);

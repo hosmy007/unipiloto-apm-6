@@ -17,6 +17,11 @@ NodeJS
         npm install -g typescript@2.0.9
 
 
+        tsc index.ts
+
+        node index.js  Ejecutar un javascript desde node
+        
+
         ERROR:
         --------------------------------------------------------------------------
         npm ERR! Windows_NT 10.0.14393

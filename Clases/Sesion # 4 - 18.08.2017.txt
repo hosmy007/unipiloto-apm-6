@@ -1,0 +1,6 @@
+npm install -g @angular/cli
+ng new lab1
+cd lab1
+ng serve
+
+localhost:4200
