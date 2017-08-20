@@ -4,3 +4,21 @@ cd lab1
 ng serve
 
 localhost:4200
+
+npm install @angular/animations --save
+npm install @angular/animations@4.2.4 --save
+
+BDD ->Karma
+BDD: ->Behavior Driven Development ->JASMIE
+
+Componentes de App angular
+    Componente inicial->app.component   
+
+Expresiones de Angular {{}}    
+
+Directiva <app-root>
+
+Los modulos se gestion desde el package.json
+El template se comunica travez de expresiones
+
+Las directivas si se pueden modificar (tienen eventos): [(ngModel)], *ngIf, *ngFor, (click)

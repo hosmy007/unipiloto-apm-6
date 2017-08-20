@@ -89,7 +89,7 @@ var student3 = new Student(3, 26, "Rafael 3 Guillermo", "Blanco 3 Banquez", clas
 var studets = [student1, student2, student3];
 var teacher = new Teacher(2, 45, "Angel", "Banquez", "Doctor en ciencias", grades, glaups);
 teacher.setStudents(studets);
-/*studets.forEach(aStudent => {
-    console.log(aStudent);
-});*/
-console.log(teacher);
+studets.forEach(function (aStudent) {
+    console.log(aStudent.id);
+});
+//console.log(teacher); 

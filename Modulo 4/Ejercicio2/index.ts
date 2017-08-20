@@ -103,7 +103,7 @@ let studets: Student[] = [student1, student2, student3 ];
 var teacher = new Teacher(2,45,"Angel","Banquez", "Doctor en ciencias", grades, glaups);
 teacher.setStudents( studets );
 
-/*studets.forEach(aStudent => {
-    console.log(aStudent); 
-});*/
-console.log(teacher);
+studets.forEach(aStudent => {
+    console.log(aStudent.id); 
+});
+//console.log(teacher);
