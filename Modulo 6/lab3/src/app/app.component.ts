@@ -44,7 +44,7 @@ const TEACHERS: Teacher[] = [
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title: string = "los productos del Año";
+  title: string = "Ejercicio Teachers y Students";
 
   vStudentSelected: Student;
   vTeacherSelected: Teacher;

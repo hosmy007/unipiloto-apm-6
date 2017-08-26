@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Teacher } from '../models/teacher';
+import {Teacher} from '../../../models/teacher';
 
 @Component({
   selector: 'detail-teacher-component',

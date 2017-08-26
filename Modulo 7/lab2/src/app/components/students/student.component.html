@@ -1,0 +1,12 @@
+<h1>{{ title }}</h1>
+<table border="1">
+    <tr>
+      <th>Cedula</th><th>Nombres</th><th>Apellidos</th>
+    </tr>
+    <tr *ngFor="let s of vStudents" (click)="onSelectStudents(s)">
+        <td>{{s.cedula}}</td>
+        <td>{{s.nombres}}</td>
+        <td>{{s.apellidos}}</td>        
+    </tr>
+  </table>
+<detail-student-component [vStudent]="vStudentSelected"></detail-student-component>
