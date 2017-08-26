@@ -1,0 +1,39 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{title}}!
+  </h1>
+  
+  <table border="1">
+    <tr>
+      <th>Brand</th><th>Model</th><th>Color</th><th>Plate</th><th>Capacity</th><th>Buil Year</th>
+    </tr>
+    <tr *ngFor="let v of vVehiculos" 
+        (click)="onSelect(v)">
+        <td>{{v.brand}}</td>
+        <td>{{v.model}}</td>
+        <td>{{v.color}}</td>
+        <td>{{v.plate}}</td>
+        <td>{{v.capacity}}</td>
+        <td>{{v.build_year}}</td>
+    </tr>
+  </table>
+
+  <hr />
+  <div *ngIf="vVehiculoSeleccionado">
+    <label>brand: </label><br />
+    <input [(ngModel)]="vVehiculoSeleccionado.brand" placeholder="brand" readonly="true"><br />
+    <label>model: </label><br />
+    <input [(ngModel)]="vVehiculoSeleccionado.model" placeholder="model"><br />
+    <label>color: </label><br />
+    <input [(ngModel)]="vVehiculoSeleccionado.color" placeholder="color"><br />
+    <label>plate: </label><br />
+    <input [(ngModel)]="vVehiculoSeleccionado.plate" placeholder="plate"><br />
+    <label>capacity: </label><br />
+    <input [(ngModel)]="vVehiculoSeleccionado.capacity" placeholder="capacity"><br />
+    <label>build_year: </label><br />
+    <input [(ngModel)]="vVehiculoSeleccionado.build_year" placeholder="build_year"><br />
+  </div>
+  
+
+

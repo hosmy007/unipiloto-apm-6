@@ -22,3 +22,11 @@ Los modulos se gestion desde el package.json
 El template se comunica travez de expresiones
 
 Las directivas si se pueden modificar (tienen eventos): [(ngModel)], *ngIf, *ngFor, (click)
+[(ngModel)]=Cuando quiero editar/ver el modelo
+[]=cuando cambie el estado de un modelo
+()=cambio mi evento ( click, onmouse )
+
+imports, declaraciones providers,
+
+metadata de un component
+    template, el estilo, selector, 
