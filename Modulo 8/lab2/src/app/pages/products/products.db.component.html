@@ -1,0 +1,48 @@
+﻿<h1>{{ title }}</h1>
+    
+    <label>Identificacion: </label>
+    <input #personaidentificacion /><br />
+    <label>Nombres: </label>
+    <input #personanombres /><br />
+    <label>Apellidos: </label>
+    <input #personaapellidos /><br />
+    <label>Telefono: </label>
+    <input #personatelefono /><br />
+    <label>Ciudad: </label>
+    <input #personaciudad /><br />
+    <label>Correo: </label>
+    <input #personacorreo /><br />
+
+    <button (click)="agregarNuevo(personaidentificacion.value,
+                                    personanombres.value,
+                                    personaapellidos.value,
+                                    personatelefono.value,
+                                    personaciudad.value,
+                                    personacorreo.value);">
+    Agregar
+    </button>
+
+    <hr />
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Identificacion</th>
+        <th>Nombres</th>
+        <th>Apellidos</th>
+        <th>Telefono</th>
+        <th>Ciudad</th>
+        <th>Correo</th>
+    </tr>
+    <tr *ngFor="let product of products"
+        (click)="onSelect(product)">
+        <td>{{product.id}}</td>
+        <td>{{product.identificacion}}</td>
+        <td>{{product.nombres}}</td>
+        <td>{{product.apellidos}}</td>
+        <td>{{product.telefono}}</td>
+        <td>{{product.ciudad}}</td>
+        <td>{{product.correo}}</td>        
+    </tr>    
+</table>
+
+<product-detail-db [product]="selected"></product-detail-db>

@@ -1,0 +1,21 @@
+﻿<div *ngIf="product">
+    <hr />
+    <label>ID: </label><br />
+    <input [(ngModel)]="product.id" placeholder="name"><br />
+    <label>Identificacion: </label><br />
+    <input [(ngModel)]="product.identificacion" placeholder="description"><br />
+    <label>Nombres: </label><br />
+    <input [(ngModel)]="product.nombres" placeholder="tipo"><br />
+    <label>Price: </label><br />
+    <input [(ngModel)]="product.apellidos" placeholder="precio"><br />
+    <label>Telefono: </label><br />
+    <input [(ngModel)]="product.telefono" placeholder="cantidad"><br />
+    <label>Ciudad: </label><br />
+    <input [(ngModel)]="product.ciudad" placeholder="cantidad"><br />
+    <label>Correo: </label><br />
+    <input [(ngModel)]="product.correo" placeholder="cantidad"><br />
+
+    <button (click)="actualizar(product);">
+        Actualizar
+    </button>
+</div>

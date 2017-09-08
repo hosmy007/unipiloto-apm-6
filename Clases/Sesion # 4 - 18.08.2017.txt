@@ -26,7 +26,18 @@ Las directivas si se pueden modificar (tienen eventos): [(ngModel)], *ngIf, *ngF
 []=cuando cambie el estado de un modelo
 ()=cambio mi evento ( click, onmouse )
 
-imports, declaraciones providers,
+imports(Componentes creados), 
+declaraciones (modulos)
+providers (lo que cree como servicios),
 
 metadata de un component
     template, el estilo, selector, 
+
+ROUTING
+    SPI (single page interface)    
+
+
+ng g service serives/service_name
+ng g component pages/component_name    
+
+npm install angular2-in-memory-web-api --save-dev
