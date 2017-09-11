@@ -41,3 +41,11 @@ ng g service serives/service_name
 ng g component pages/component_name    
 
 npm install angular2-in-memory-web-api --save-dev
+
+
+
+arq orientada al servicio ( web services ) para moviles
+
+firebase
+
+npm install firebase angularfire2 --save

@@ -1,0 +1,12 @@
+<div>
+  <input type="text" #cedula placeholder="Cedula">
+	<input type="text" #firstName placeholder="Primero nombre">
+	<input type="text" #lastName placeholder="Apellidos">
+	<button (click)="saveFirstNameAndLastName(cedula.value, firstName.value, lastName.value)">Guardar</button>	
+  <button (click)="delete()">Eliminar</button>
+  
+  <br />
+  <li *ngFor="let i of items | async">
+    {{i.cedula}} - {{ i.firstname }} - {{ i.lastname }}
+  </li>
+</div>

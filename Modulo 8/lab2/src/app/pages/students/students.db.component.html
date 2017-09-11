@@ -1,0 +1,82 @@
+﻿<h1>{{ title }}</h1>
+    
+    <label>Identificacion: </label>
+    <input #personaidentificacion /><br />
+    <label>Nombres: </label>
+    <input #personanombres /><br />
+    <label>Apellidos: </label>
+    <input #personaapellidos /><br />    
+
+    <button (click)="agregarNuevoPromesa(personaidentificacion.value,
+                                    personanombres.value,
+                                    personaapellidos.value);">
+    Agregar promesa
+    </button>
+    <button (click)="agregarNuevoObservable(personaidentificacion.value,
+                                    personanombres.value,
+                                    personaapellidos.value);">
+    Agregar observable
+    </button>
+
+    <button (click)="modificarPromesa(personaidentificacion.value,
+                                    personanombres.value,
+                                    personaapellidos.value);">
+    Modificar promesa
+    </button> 
+
+    <button (click)="modificarObservable(personaidentificacion.value,
+                                    personanombres.value,
+                                    personaapellidos.value);">
+    Modificar observable
+    </button>    
+
+    <hr />
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Identificacion</th>
+        <th>Nombres</th>
+        <th>Apellidos</th>
+    </tr>
+    <tr *ngFor="let student of students"
+        (click)="onSelect(student)">
+        <td>{{student.id}}</td>
+        <td>{{student.dni}}</td>
+        <td>{{student.name}}</td>
+        <td>{{student.lastName}}</td>       
+    </tr>    
+</table>
+
+<br />
+<p>Buscardor</p>
+<label>Identificacion: </label>
+<input #identificacion /><br />
+
+<button (click)="buscarStudent(identificacion.value);">
+    Buscar
+</button> 
+
+<div *ngIf="vstudenSelected">
+    <label>Identificacion: </label>
+    <label>{{vstudenSelected.dni}}</label> <br />
+    <label>Nombres: </label>
+    <label>{{vstudenSelected.name}}</label> <br />
+    <label>Apellidos: </label>
+    <label>{{vstudenSelected.lastName}}</label> <br />
+    
+  </div>
+<div *ngIf="vError">
+    <label>timestamp: </label>
+    <label>{{vError.timestamp}}</label> <br />
+    <label>status: </label>
+    <label>{{vError.status}}</label> <br />
+    <label>error: </label>
+    <label>{{vError.error}}</label> <br />
+    <label>exception: </label>
+    <label>{{vError.exception}}</label> <br />
+    <label>message: </label>
+    <label>{{vError.message}}</label> <br />
+    <label>path: </label>
+    <label>{{vError.path}}</label> <br />
+    
+  </div>

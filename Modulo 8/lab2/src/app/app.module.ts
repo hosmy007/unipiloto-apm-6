@@ -5,11 +5,13 @@ import {HttpModule} from "@angular/http";
 import { AppComponent } from './app.component';
 import { ProductsService } from "./service/products.service";
 import { ProductDBService } from './service/products.db.service';
+import {StudentDBService} from "./service/student.db.service";
 import { ProductsComponent } from './pages/products/products.component';
 import { ProductsDBComponent } from './pages/products/products.db.component';
 import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 import { ProductDetailDBComponent } from './pages/product-detail/product-detail.db.component';
 import { HomeComponent } from './pages/home/home.component';
+import {StudentsDBComponent} from "./pages/students/students.db.component";
 import {AppRoutingModule} from "./app.routing";
 import {APP_BASE_HREF} from "@angular/common";
 
@@ -20,7 +22,8 @@ import {APP_BASE_HREF} from "@angular/common";
     ProductsDBComponent,
     ProductDetailComponent,
     ProductDetailDBComponent,
-    HomeComponent
+    HomeComponent,
+    StudentsDBComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,8 @@ import {APP_BASE_HREF} from "@angular/common";
   ],
   providers: [    
     ProductsService,
-    ProductDBService,     
+    ProductDBService,   
+    StudentDBService,  
     {
       provide: APP_BASE_HREF, useValue : '/'
     }
