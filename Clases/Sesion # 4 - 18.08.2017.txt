@@ -49,3 +49,43 @@ arq orientada al servicio ( web services ) para moviles
 firebase
 
 npm install firebase angularfire2 --save
+
+ng build --prod
+
+npm install -g firebase-tools
+
+firebase login
+firebase login --reauth
+
+firebase init
+firebase deploy
+
+
+Error: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+firebase login:ci
+
+Success! Use this token to login on a CI server:
+
+1/2psUN0qBNknLW8S5jSIEQdKXwQmoXeQGiYCjcVQFx5mc01DR7SD7RjAqDOCq1Fuw
+
+Example: firebase deploy --token "$FIREBASE_TOKEN"
+
+
+
+
+
+CORDOVA VS PhoneGap
+npm install cordova ionic -g
+
+Crear app en cordova
+
+>cordova create NOMBRE_PROJECTO com.excelenta.proyecto "NOMBRE_ICONO_APP"
+ Estructura directorio del proyecto
+    hooks
+    res
+        icon
+        screen
+    www
+
+
+    GenyMotion
