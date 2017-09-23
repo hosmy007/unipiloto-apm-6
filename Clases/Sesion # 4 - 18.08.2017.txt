@@ -88,4 +88,38 @@ Crear app en cordova
     www
 
 
+Adicionar plataforma
+cordova platform add android
+                     ios
+                     browser
+cordova platform rm/remove android
+cordova build android
+cordova run android
+
+
+adb devices
+cordova run  android -target=abc123
+cordova run android --target=7N2UNB156W033014
     GenyMotion
+https://ionicframework.com/    
+
+ionic start
+ionic start myApp blank
+
+Si sale error de git
+https://git-scm.com/ (descargar e instalar)
+
+ionic cordova platform add android/ios
+ionic cordova build android
+ionic cordova run android
+
+ionic serve -o
+ionic serve --lab
+http://localhost:8100/ionic-lab
+
+ionic g
+ionic g page nombrecomponente
+ionic g provider nombredelservicio
+
+Android <=4 dalvik
+Android >= 5 JIT        
