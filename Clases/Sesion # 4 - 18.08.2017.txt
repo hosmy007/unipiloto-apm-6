@@ -105,6 +105,7 @@ https://ionicframework.com/
 
 ionic start
 ionic start myApp blank
+ionic start af2-lists blank --v2
 
 Si sale error de git
 https://git-scm.com/ (descargar e instalar)
@@ -114,12 +115,14 @@ ionic cordova build android
 ionic cordova run android
 
 ionic serve -o
-ionic serve --lab
+ionic serve --lab -o
 http://localhost:8100/ionic-lab
 
 ionic g
 ionic g page nombrecomponente
 ionic g provider nombredelservicio
+
+npm install angularfire2@4.0.0-rc0 firebase --save
 
 SET ANDROID_HOME="C:\Users\Administrador\AppData\Local\Android\Sdk"
 set PATH=%PATH%;%ANDROID_HOME%\tools;%ANDROID_HOME%\platform-tools
@@ -128,3 +131,5 @@ Android <=4 dalvik
 Android >= 5 JIT        
 
 https://regexr.com/
+para debug de la app
+chrome://inspect/#devices
