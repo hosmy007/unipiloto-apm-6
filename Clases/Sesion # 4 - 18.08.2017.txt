@@ -121,5 +121,10 @@ ionic g
 ionic g page nombrecomponente
 ionic g provider nombredelservicio
 
+SET ANDROID_HOME="C:\Users\Administrador\AppData\Local\Android\Sdk"
+set PATH=%PATH%;%ANDROID_HOME%\tools;%ANDROID_HOME%\platform-tools
+
 Android <=4 dalvik
 Android >= 5 JIT        
+
+https://regexr.com/
